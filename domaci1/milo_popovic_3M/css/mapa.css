@@ -1,0 +1,102 @@
+body {
+    background-color: #E8D2B0;
+}
+
+
+.b {
+     color: #E8D2B0;
+    font-size: 60px;
+    width: 1200px;
+    position: relative;
+    top: -40px;
+    left: 10px;
+    height: auto;
+    overflow: auto;
+}
+.c {
+     color: #E8D2B0;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    bottom: 0px;
+    width: 400px;
+    height: auto;
+    overflow: auto;
+}
+.a {
+    color: #344E41;
+    position: relative;
+    left: 10px;
+    font-size: 30px;
+    width: 750px;
+    height: auto;
+    overflow: auto;
+}
+
+.adeo {
+    background-color: #176B67;
+    position: relative;
+    height: 175px;
+    padding: 10px;
+}
+.linkdeo {
+    background-color: #D98252;
+    
+    padding: 10px;
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+}
+
+
+.oblasti {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+    width: 2000px;
+    left: -240px;
+}
+
+.dugme {
+    background-color: #F7EBDD;
+    color: #176B67;
+    border: 0px solid #D98252;
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    cursor: pointer;
+    position: relative;
+    width: 500px;
+}
+
+.dugme:hover {
+    background-color: #e8dbcd;
+    color: #176B67;
+}
+.dugme.aktivno {
+    background-color: #176B67;
+    color: white;
+}
+
+
+.promjenjivaOblast {
+    background-color: #F7EBDD;
+    color: #176B67;
+    border: 0px solid #D98252;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 23px;
+    cursor: pointer;
+    position: relative;
+    width: 1475px;
+}
+
+img{
+    border-radius: 15px;
+    position: relative;
+    width: 1475px;
+}

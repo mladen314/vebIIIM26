@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milo Popović - mapa</title>
+    <link rel="stylesheet" href="css/mapa.css">
+    <link rel="icon" href="images/Kotor.jpg">
+</head>
+<body>
+    <div class="adeo">
+        <p class = "b"  > Mapa destinacija</p>
+        <div class="linkdeo">
+            <a href="index.html" class="c indexlink">nazad</a>
+        </div>
+        
+    </div>
+
+    <section class="oblasti">
+        <button class="dugme aktivno"
+                onclick="prikaziOblast('primorje', this)">
+                Primorje
+        </button>
+
+        <button class="dugme"
+                onclick="prikaziOblast('sjever', this)">
+                Sjever
+        </button>
+
+        <button class="dugme"
+                 onclick="prikaziOblast('centar', this)">
+                Centralna Crna Gora
+        </button>
+    </section>
+
+
+    <div class="promjenjivaOblast">
+        <h2 id="naslov">Crnogorsko primorje</h2>
+        <img id="slika" src="images/primorje.jpg">
+        <h4 id="tekst">Crnogorsko primorje poznato je po plavom Jadranskom moru, prelijepim plažama i starim primorskim gradovima.</h4>
+    <ul id="mjesta">
+        <li>Kotor — stari grad i zaliv</li>
+        <li>Budva — plaže i istorijske zidine</li>
+        <li>Ulcinj — Velika plaža</li>
+    </ul>
+    </div>
+
+
+    <script>
+        const oblasti = {
+            primorje: {
+                naslov: "Crnogorsko primorje",
+                tekst: "Crnogorsko primorje poznato je po plavom Jadranskom moru, prelijepim plažama i starim primorskim gradovima.",
+                slika: "images/primorje.jpg",
+                alt: "Bokokotorski zaliv",
+                mjesta: [
+                    "Kotor — stari grad i zaliv",
+                    "Budva — plaže i istorijske zidine",
+                    "Ulcinj — Velika plaža"
+                ]
+            },
+            sjever: {
+                naslov: "Sjever Crne Gore",
+                tekst: "Sjever Crne Gore oduševljava visokim planinama, bistrim jezerima i netaknutom prirodom. Idealan je za planinarenje i avanture.",
+                slika: "images/sjever.jpg",
+                alt: "Planine Durmitora",
+                mjesta: [
+                    "Žabljak — planinski grad",
+                    "Durmitor — planine i Crno jezero",
+                    "Kanjon Tare — rafting i priroda"
+                ]
+            },
+            centar: {
+                naslov: "Centralna Crna Gora",
+                tekst: "Centralni dio države spaja istoriju, kulturu i prirodne ljepote. Ovdje se nalaze glavni grad, istorijska prijestonica i Skadarsko jezero.",
+                slika: "images/centar.jpg",
+                alt: "Centar",
+                mjesta: [
+                    "Podgorica — glavni grad",
+                    "Cetinje — istorijska prijestonica",
+                    "Skadarsko jezero — bogatstvo prirode"
+                ]
+            }
+        };
+
+        function prikaziOblast(naziv, dugme) {
+            document.querySelectorAll(".dugme").forEach(function(d) {
+                d.classList.remove("aktivno");
+            });
+
+            dugme.classList.add("aktivno");
+
+            const oblast = oblasti[naziv];
+
+            document.getElementById("naslov").textContent =
+                oblast.naslov;
+
+            document.getElementById("tekst").textContent =
+                oblast.tekst;
+            document.getElementById("slika").src = oblast.slika;
+            document.getElementById("slika").alt = oblast.alt;
+
+
+            const lista = document.getElementById("mjesta");
+            lista.replaceChildren();
+
+            oblast.mjesta.forEach(function(mjesto) {
+                const stavka = document.createElement("li");
+                stavka.textContent = mjesto;
+                lista.appendChild(stavka);
+            });
+        }
+    </script>
+</body>
+</html>

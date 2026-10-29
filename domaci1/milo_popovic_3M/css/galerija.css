@@ -1,0 +1,73 @@
+body {
+    background-color: #E8D2B0;
+}
+
+
+.b {
+     color: #E8D2B0;
+    font-size: 60px;
+    width: 1200px;
+    position: relative;
+    top: -40px;
+    left: 10px;
+    height: auto;
+    overflow: auto;
+}
+.c {
+     color: #E8D2B0;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    bottom: 0px;
+    width: 400px;
+    height: auto;
+    overflow: auto;
+}
+.a {
+    color: #344E41;
+    position: relative;
+    left: 10px;
+    font-size: 30px;
+    width: 750px;
+    height: auto;
+    overflow: auto;
+}
+
+.adeo {
+    background-color: #176B67;
+    position: relative;
+    height: 175px;
+    padding: 10px;
+}
+.linkdeo {
+    background-color: #D98252;
+    
+    padding: 10px;
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+}
+
+
+.galerija {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.slika {
+    padding: 15px;
+    border-radius: 12px;
+}
+.slika h3 {
+    color: #176B67;
+}
+
+.slika p {
+    color: #344E41;
+}
+.slika img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
