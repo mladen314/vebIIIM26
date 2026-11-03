@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        table, td{
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        th{
+            border: 2px solid brown;
+        }
+        th, td{
+            background-color: aqua;
+        }
+        table{
+            width: 90%;
+        }
+        td:hover, th:hover{
+            background-color: red;
+            border: 3px dotted black;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <table>
+        <caption>Raspored časova</caption>
+        <tr>
+            <th>r.b.</th>
+            <th>Ponedeljak</th>
+            <th>Utorak</th>
+            <th>Srijeda</th>
+            <th>Četvrtak</th>
+            <th>Petak</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td rowspan="2">Matematika</td>
+            <td>Programiranje</td>
+            <td>Hemija</td>
+            <td>Likovno</td>
+            <td>Fizičko</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+           <!--   <td>Matematika</td>-->
+            <td>Fizika</td>
+            <td>Biologija</td>
+            <td>CSBH</td>
+            <td>Muzičko</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>CSBH</td>
+            <td>Hemija</td>
+            <td>Programiranje</td>
+            <td>Biologija</td>
+            <td>CSBH</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Istorija</td>
+            <td>Geografija</td>
+            <td>Programiranje</td>
+            <td>CSBH</td>
+            <td>Fizika</td>
+        </tr>
+        
+    </table>
+
+
+</body>
+</html>
