@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksandar Rnković - Mapa</title>
+    <link rel="icon" type="image/jfif" href="slike/f1logo.jfif">
+
+    <style>
+        * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                margin: 0;
+                padding: 10px;
+                background-color: rgb(8, 3, 58);
+                color: rgb(229, 229, 233);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 17px;
+                line-height: 1.8;
+            }
+    
+            h1 {
+                color: white;
+                font-size: clamp(32px, 5vw, 52px);
+                line-height: 1.2;
+                border-left: 10px solid #e10600;
+                padding-left: 18px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }
+    
+            h2 {
+                color: white;
+                font-size: 27px;
+                line-height: 1.3;
+                margin-top: 35px;
+                margin-bottom: 15px;
+                border-left: 5px solid #e10600;
+                padding-left: 12px;
+            }
+    
+            a {
+                color: rgb(240, 40, 40);
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.2s;
+            }
+    
+            a:hover {
+                color: #ffffff;
+                text-decoration: underline;
+            }
+
+            .mapa {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .mapa img {
+                max-width: 100%;
+                height: auto;
+            }
+    </style>
+</head>
+<body>
+    <h1>Upoznajte se sa timovima</h1>
+    <a href="index.html">Vratite se na početnu stranicu</a>
+    <br>
+    <a href="o_temi.html">Pređite na stranicu o sportu</a>
+    <br>
+    <a href="galerija.html">Otvorite galeriju najpoznatijih vozača i trkačkih staza</a>
+    <br>
+    
+    <h2>Klikom na bilo koju od 11 slika vodi na zvaničnu stranicu tog tima</h2>
+
+    <div class="mapa">
+        <img src="slike/mapa.png" usemap="#image-map" alt="Mapa timova Formule 1">
+    </div>
+
+    <map name="image-map">
+        <area target="_blank" alt="BWT Alpine Formula One Team" title="BWT Alpine Formula One Team" href="https://www.alpinef1.com/" coords="10,39,190,155" shape="rect">
+        <area target="_blank" alt="Aston Martin Aramco Formula One Team" title="Aston Martin Aramco Formula One Team" href="https://www.astonmartinf1.com/en-GB" coords="385,152,210,56" shape="rect">
+        <area target="_blank" alt="Audi Revolut F1 Team" title="Audi Revolut F1 Team" href="https://www.audif1.com/en" coords="418,60,583,148" shape="rect">
+        <area target="_blank" alt="Cadillac Formula 1 Team" title="Cadillac Formula 1 Team" href="https://www.cadillacf1team.com/" coords="609,40,794,167" shape="rect">
+        <area target="_blank" alt="Scuderia Ferrari HP" title="Scuderia Ferrari HP" href="https://www.ferrari.com/en-EN/formula1" coords="42,234,99,222,157,233,158,295,140,343,99,383,59,346,41,296" shape="poly">
+        <area target="_blank" alt="TGR Haas F1 Team" title="TGR Haas F1 Team" href="https://www.haasf1team.com/" coords="208,209,389,381" shape="rect">
+        <area target="_blank" alt="McLaren Mastercard F1 Team" title="McLaren Mastercard F1 Team" href="https://www.mclaren.com/racing/formula-1/" coords="500,300,84" shape="circle">
+        <area target="_blank" alt="Mercedes-AMG PETRONAS Formula One Team" title="Mercedes-AMG PETRONAS Formula One Team" href="https://www.mercedesamgf1.com/" coords="621,217,778,381" shape="rect">
+        <area target="_blank" alt="Visa Cash App Racing Bulls F1 Team" title="Visa Cash App Racing Bulls F1 Team" href="https://www.visacashapprb.com/int-en" coords="100,499,97" shape="circle">
+        <area target="_blank" alt="Oracle Red Bull Racing" title="Oracle Red Bull Racing" href="https://www.redbullracing.com/int-en" coords="216,443,383,566" shape="rect">
+        <area target="_blank" alt="Atlassian Williams F1 Team" title="Atlassian Williams F1 Team" href="https://www.williamsf1.com/" coords="417,446,583,564" shape="rect">
+    </map>
+
+</body>
+</html>

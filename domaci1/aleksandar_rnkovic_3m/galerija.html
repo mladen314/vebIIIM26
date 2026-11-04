@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksandar Rnković - Galerija</title>
+    <link rel="icon" type="image/jfif" href="slike/f1logo.jfif">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px;
+            background-color: rgb(8, 3, 58);
+            color: rgb(229, 229, 233);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            color: white;
+            font-size: clamp(32px, 5vw, 52px);
+            line-height: 1.2;
+            border-left: 10px solid #e10600;
+            padding-left: 18px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 27px;
+            line-height: 1.3;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-left: 5px solid #e10600;
+            padding-left: 12px;
+        }
+
+        a {
+            color: rgb(240, 40, 40);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .galerija {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            width: 100%;
+            max-width: 1500px;
+            margin: 0 auto 50px;
+        }
+
+        .jednaslika {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .jednaslika a {
+            display: block;
+            width: 100%;
+        }
+
+        .jednaslika img {
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .opis {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 10px 0 0;
+            overflow-wrap: break-word;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        strong {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galerija najpoznatijih vozača i trkačkih staza</h1>
+    <a href="index.html">Vratite se na početnu stranicu</a>
+    <br>
+    <a href="o_temi.html">Pređite na stranicu o sportu</a>
+    <br>
+    <a href="mapa.html">Upoznajte se sa timovima</a>
+
+    <h2>Najpoznatiji vozači</h2>
+
+    <div class="galerija">
+        <div class="jednaslika">
+            <a href="slike/galerija/sumaher.jfif" target="_blank"><img src="slike/galerija/sumaher.jfif" alt="Mihael Šumaher-sedmostruki šampion iz Njemačke. Obilježio je eru Ferarija 2000-ih. Poznat je po svojoj disciplini, preciznosti i velikoj želji za pobjedom."></a>
+            <p class="opis"><strong><u>Mihael Šumaher</u> - sedmostruki šampion iz Njemačke. Obilježio je eru Ferarija 2000-ih. Poznat je po svojoj disciplini, preciznosti i velikoj želji za pobjedom.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/hamilton.jfif" target="_blank"><img src="slike/galerija/hamilton.jfif" alt="Luis Hamilton-britanski vozač sa sedam titula svjetskog prvaka sa MekLarenom i Mercedesom. Trijumfovao je u čak 106 velikih nagrada."></a>
+            <p class="opis"><strong><u>Luis Hamilton</u> - britanski vozač sa sedam titula svjetskog prvaka sa MekLarenom i Mercedesom. Trijumfovao je u čak 106 velikih nagrada.</strong></p>
+        </div>
+
+        <div class="jednaslika">
+            <a href="slike/galerija/sena.jfif" target="_blank"><img src="slike/galerija/sena.jfif" alt="Ajrton Sena-legendarni brazilski vozač, trostruki svjetski prvak, poznat po izuzetnoj brzini i vještini vožnje po kiši."></a>
+            <p class="opis"><strong><u>Ajrton Sena</u> - legendarni brazilski vozač, trostruki svjetski prvak, poznat po izuzetnoj brzini i vještini vožnje po kiši.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/verstappen.avif" target="_blank"><img src="slike/galerija/verstappen.avif" alt="Maks Verstapen-četvorostruki šampion iz Nizozemske, prepoznatljiv po veoma agresivnom stilu vožnje. Pobijedio je čak 19 od 23 trka 2023. godine."></a>
+            <p class="opis"><strong><u>Maks Verstapen</u> - četvorostruki šampion iz Nizozemske, prepoznatljiv po veoma agresivnom stilu vožnje. Pobijedio je čak 19 od 22 trke 2023. godine.</strong></p>
+        </div>
+
+        <div class="jednaslika">
+            <a href="slike/galerija/alonso.webp" target="_blank"><img src="slike/galerija/alonso.webp" alt="Fernando Alonso-španski vozač sa dvije titule i najiskusniji vozač sa 443 započete trke. Poznat je po sposobnosti da izvuče maksimum iz bolida."></a>
+            <p class="opis"><strong><u>Fernando Alonso</u> - španski vozač sa dvije titule i najiskusniji vozač sa 443 započete trke. Poznat je po sposobnosti da izvuče maksimum iz bolida.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/vettel.jfif" target="_blank"><img src="slike/galerija/vettel.jfif" alt="Sebastian Fetel-njemački vozač koji je osvojio četiri uzastopne titule svjetskog prvaka sa Red Bullom."></a>
+            <p class="opis"><strong><u>Sebastian Fetel</u> - njemački vozač koji je osvojio četiri uzastopne titule svjetskog prvaka sa Red Bullom.</strong></p>
+        </div>
+
+        <div class="jednaslika">
+            <a href="slike/galerija/prost.jfif" target="_blank"><img src="slike/galerija/prost.jfif" alt="Alen Prost-Francuz sa četiri titule, poznat po inteligentnoj, preciznoj i taktičkoj vožnji, kao i rivalstvu sa Senom."></a>
+            <p class="opis"><strong><u>Alen Prost</u> - Francuz sa četiri titule, poznat po inteligentnoj, preciznoj i taktičkoj vožnji, kao i rivalstvu sa Senom.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/lauda.jfif" target="_blank"><img src="slike/galerija/lauda.jfif" alt="Niki Lauda-trostruki šampion iz Austrije, vratio se trkanju nakon katastrofalnog incidenta na Velikoj nagradi Njemačke 1976. godine."></a>
+            <p class="opis"><strong><u>Niki Lauda</u> - trostruki šampion iz Austrije, vratio se trkanju nakon katastrofalnog incidenta na Velikoj nagradi Njemačke 1976. godine.</strong></p>
+        </div>
+    </div>
+
+    <h2>Najpoznatije trkačke staze</h2>
+
+    <div class="galerija">
+        <div class="jednaslika">
+            <a href="slike/galerija/monako.jfif" target="_blank"><img src="slike/galerija/monako.jfif" alt="Monako (Circuit de Monaco)-ulična staza karakteristična po uskim prolazima, oštrim krivinama i čuvenom tunelu."></a>
+            <p class="opis"><strong><u>Monako (Circuit de Monaco)</u> - ulična staza karakteristična po uskim prolazima, oštrim krivinama i čuvenom tunelu.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/monca.jfif" target="_blank"><img src="slike/galerija/monca.jfif" alt="Monca (Autodromo Nazionale Monza)-legendarna italijanska staza poznata po dugim pravcima i izuzetno velikim brzinama."></a>
+            <p class="opis"><strong><u>Monca (Autodromo Nazionale Monza)</u> - legendarna italijanska staza poznata po dugim pravcima i izuzetno velikim brzinama.</strong></p>
+        </div>
+
+        <div class="jednaslika">
+            <a href="slike/galerija/spa.jpg" target="_blank"><img src="slike/galerija/spa.jpg" alt="Spa-Frankoršamp (Circuit de Spa-Francorchamps)-belgijska staza smještena u šumovitom području sa velikim promjenama nadmorske visine."></a>
+            <p class="opis"><strong><u>Spa-Frankoršamp (Circuit de Spa-Francorchamps)</u> - belgijska staza smještena u šumovitom području sa velikim promjenama nadmorske visine.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/silverstoun.jpg" target="_blank"><img src="slike/galerija/silverstoun.jpg" alt="Silverstoun (Silverstone Circuit)-britanska staza prepoznatljiva po brzim krivinama i bogatom istorijom."></a>
+            <p class="opis"><strong><u>Silverstoun (Silverstone Circuit)</u> - britanska staza prepoznatljiva po brzim krivinama i bogatom istorijom.</strong></p>
+        </div>
+
+        <div class="jednaslika">
+            <a href="slike/galerija/suzuka.jpg" target="_blank"><img src="slike/galerija/suzuka.jpg" alt="Suzuka (Suzuka International Racing Course)-staza u Japanu jedinstvenog oblika osmice, poznata po tehnički zahtjevnim krivinama."></a>
+            <p class="opis"><strong><u>Suzuka (Suzuka International Racing Course)</u> - staza u Japanu jedinstvenog oblika osmice, poznata po tehnički zahtjevnim krivinama.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/nordslajfe.jfif" target="_blank"><img src="slike/galerija/nordslajfe.jfif" alt="Nirburgring (Nürburgring)-staza u Njemačkoj poznata po legendarnom šumskom sektoru „Nordschleife“ (sjeverna petlja) koji je zbog svoje dužine, brojnih krivina i zahtjevnosti dobio nadimak „Zeleni pakao“."></a>
+            <p class="opis"><strong><u>Nirburgring (Nürburgring)</u> - staza u Njemačkoj poznata po legendarnom šumskom sektoru „Nordschleife“ (sjeverna petlja) koji je zbog svoje dužine, brojnih krivina i zahtjevnosti dobio nadimak „Zeleni pakao“.</strong></p>
+        </div>
+
+        <div class="jednaslika">
+            <a href="slike/galerija/singapur.jfif" target="_blank"><img src="slike/galerija/singapur.jfif" alt="Singapur (Marina Bay Street Circuit)-prva noćna trka u istoriji. Karakterišu je zahtjevne krivine kroz ulice ovog grada."></a>
+            <p class="opis"><strong><u>Singapur (Marina Bay Street Circuit)</u> - prva noćna trka u istoriji. Karakterišu je zahtjevne krivine kroz ulice ovog grada.</strong></p>
+        </div>
+        
+        <div class="jednaslika">
+            <a href="slike/galerija/interlagos.jfif" target="_blank"><img src="slike/galerija/interlagos.jfif" alt="Interlagos (Autódromo José Carlos Pace) - brazilska staza poznata po promjenama nadmorske visine, nepredvidivom vremenu i uzbudljivim završnicama trka."></a>
+            <p class="opis"><strong><u>Interlagos (Autódromo José Carlos Pace)</u> - brazilska staza poznata po promjenama nadmorske visine, nepredvidivom vremenu i uzbudljivim završnicama trka.</strong></p>
+        </div>
+    </div>
+</body>
+</body>
+</html>

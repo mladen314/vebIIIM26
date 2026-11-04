@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anđel Vujičić – Mapa i Lokacije</title>
+    <link rel="icon" type="image/png" href="slike/grb.png">
+</head>
+<body style="background-color: #f4f4f9; color: #333; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px;">
+
+    <!-- Navigacioni meni -->
+    <nav style="background-color: #2c3e50; padding: 10px; margin-bottom: 20px;">
+        <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Početna</a> | 
+        <a href="o_temi.html" style="color: white; margin: 0 15px; text-decoration: none;">O temi</a> | 
+        <a href="galerija.html" style="color: white; margin: 0 15px; text-decoration: none;">Galerija</a> | 
+        <a href="mapa.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Mapa</a>
+    </nav>
+
+    <h1 style="color: #2c3e50; font-size: 32px;">Interaktivna mapa znamenitosti</h1>
+    
+   <!-- Kratko uputstvo posjetiocu sa tačnim nazivima stranica -->
+    <p style="font-size: 18px; margin-bottom: 20px; color: #555;">
+        <strong>Uputstvo:</strong> Kliknite mišem na različite dijelove mape ispod da biste otvorili odgovarajuće stranice (O Temi, Galerija, Početna).
+
+    </p>
+
+    <!-- Slika povezana sa mapom atributom usemap i fiksiranim dimenzijama -->
+    <div style="margin: 20px 0;">
+        <img src="slike/mapa_grada.jpg" alt="Mapa grada Nikšića sa znamenitostima" usemap="#niksic_map" width="600" height="400" style="border: 4px solid #2c3e50; border-radius: 8px;">
+
+        <!-- Mapa slike sa tri različite aktivne oblasti i dva različita oblika (rect, circle, poly) -->
+        <map name="niksic_map">
+            <!-- 1. Oblik: rect (Pravougaonik) - Vodi na stranicu O temi -->
+            <area shape="rect" coords="50,50,220,180" href="o_temi.html" alt="Trg slobode u Nikšiću - saznajte više o temi">
+            
+            <!-- 2. Oblik: circle (Krug) - Vodi na Galeriju -->
+            <area shape="circle" coords="320,120,45" href="galerija.html" alt="Tvrđava Bedem - pogledajte galeriju slika">
+            
+            <!-- 3. Oblik: poly (Poligon) - Vodi na Početnu stranicu -->
+            <area shape="poly" coords="430,220, 570,220, 590,360, 410,360" href="index.html" alt="Park šuma Trebjesa - vratite se na početnu stranu">
+        </map>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    background-color: #E8D2B0;
+}
+
+
+.b {
+     color: #E8D2B0;
+    font-size: 60px;
+    width: 400px;
+    position: relative;
+    left: 10px;
+    height: auto;
+    overflow: auto;
+}
+.c {
+     color: #E8D2B0;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    width: 400px;
+    height: auto;
+    overflow: auto;
+}
+.a {
+    color: #344E41;
+    position: relative;
+    left: 10px;
+    font-size: 30px;
+    width: 750px;
+    height: auto;
+    overflow: auto;
+}
+
+.adeo {
+    background-color: #176B67;
+    
+    padding: 10px;
+}
+.linkdeo {
+    background-color: #D98252;
+    
+    padding: 10px;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+}
+img {
+    position: absolute;
+    right: 10px;
+    top: 325px;
+
+    width: 725px;
+    height: auto;
+    
+}
+.indexling {
+    position: relative;
+}
+.galerijalink {
+    position: relative;
+    left: 40px;
+}
+.mapalink {
+    position: relative;
+    left: 70px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dimitrije Velimirovic - Mapa slike</title>
+  <link rel="icon" type="image/jpeg" href="slike/sunce.jpg">
+</head>
+<body>
+  <p>
+    <a href="index.html">Pocetna</a> |
+    <a href="o_temi.html">O temi</a> |
+    <a href="galerija.html">Galerija</a> |
+    <a href="mapa.html">Mapa slike</a>
+  </p>
+  <hr>
+
+  <h1>Klikabilna mapa Jupitera</h1>
+  <p>Kliknite levu pravougaonu oblast, krug u sredini ili trougaonu oblast desno.</p>
+
+  <!-- slika Jupitera povezana je sa mapom ispod -->
+  <img src="slike/jupiter.jpg" width="474" height="249" alt="Jupiter sa tri klikabilne oblasti" usemap="#jupiterMapa">
+
+  <!-- tri oblasti vode na odgovarajuce stranice sajta -->
+  <map name="jupiterMapa">
+    <area shape="rect" coords="0,0,157,248" href="index.html" alt="Pocetna stranica">
+    <area shape="circle" coords="236,124,78" href="o_temi.html" alt="Informacije o Suncevom sistemu">
+    <area shape="poly" coords="316,0,473,0,395,248" href="galerija.html" alt="Galerija planeta">
+  </map>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cnr">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+    <title>Mariia Kasiankova – Galerija</title>
+
+
+    <link rel="icon" type="image/png" href="slike/favicon.png">
+
+    <!-- Оформление галереи и меню -->
+    <style>
+        /* Главное меню для перехода между страницами */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            background-color: #3b4d32;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Ссылки в главном меню */
+        nav a {
+            color: #f2ede4;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* Расположение фотографий в несколько рядов */
+        #galerija {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 20px auto;
+            width: 95%;
+            max-width: 1200px;
+        }
+
+        /* Одинаковая высота фотографий с сохранением пропорций */
+        #galerija img {
+            display: block;
+            height: 220px;
+            max-width: 100%;
+            width: auto;
+            object-fit: contain;
+            border: 3px solid #3b4d32;
+        }
+
+        /* Уменьшение высоты фотографий на маленьких экранах */
+        @media (max-width: 600px) {
+            nav {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 17px;
+            }
+
+            #galerija img {
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #f2ede4; font-family: 'Times New Roman', Times, serif; color: #2c251e; margin: 0; padding: 20px;">
+
+    <!-- Главное меню со ссылками на все четыре страницы -->
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="o_temi.html">O temi</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="mapa.html">Mapa slike</a>
+    </nav>
+
+    <!-- Главный заголовок страницы -->
+    <h1 style="color: #3b4d32; text-align: center; font-size: 42px; letter-spacing: 2px; margin-bottom: 30px;">
+        Anton Pavlovič Čehov – galerija
+    </h1>
+
+    <!-- Краткая инструкция для посетителя -->
+    <p style="text-align: center; font-size: 18px; line-height: 1.6;">
+        Klikni na bilo koju sliku da je otvoriš u originalnoj veličini u novoj kartici.
+    </p>
+
+    <!-- Галерея из десяти фотографий; каждая ссылка открывает соответствующий оригинальный файл -->
+    <div id="galerija">
+
+        <!-- Первая фотография -->
+        <a href="slike/Cehov-student.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov-student.jpg" alt="Portret mladog Antona Čehova">
+        </a>
+
+        <!-- Вторая фотография -->
+        <a href="slike/Cehov_2.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_2.jpg" alt="Anton Čehov sa svojim psom">
+        </a>
+
+        <!-- Третья фотография -->
+        <a href="slike/Cehov_3.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_3.jpg" alt="Spomenik posvećen Antonu Čehovu">
+        </a>
+
+        <!-- Четвёртая фотография -->
+        <a href="slike/Cehov_4.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_4.jpg" alt="Pozorišna scena iz drame Višnjik">
+        </a>
+
+        <!-- Пятая фотография -->
+        <a href="slike/Cehov_5.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_5.jpg" alt="Naslovna strana knjige Antona Čehova">
+        </a>
+
+        <!-- Шестая фотография -->
+        <a href="slike/Cehov_6.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_6.jpg" alt="Kuća-muzej Antona Čehova">
+        </a>
+
+        <!-- Седьмая фотография -->
+        <a href="slike/Cehov_7.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_7.jpg" alt="Plakat ili ilustracija povezana sa Čehovom">
+        </a>
+
+        <!-- Восьмая фотография -->
+        <a href="slike/Cehov_8.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_8.jpg" alt="Unutrašnjost kuće-muzeja Antona Čehova">
+        </a>
+
+        <!-- Девятая фотография -->
+        <a href="slike/Cehov_9.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_9.jpg" alt="Pismo povezano sa Antonom Čehovom">
+        </a>
+
+        <!-- Десятая фотография -->
+        <a href="slike/Cehov_10.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="slike/Cehov_10.jpg" alt="Portret Antona Pavloviča Čehova">
+        </a>
+
+    </div>
+
+</body>
+</html>
+

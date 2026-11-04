@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikolina šibalić– Mapa</title>
+    <link rel="icon" type="image/x-icon" href="slike/favicon.ico">
+</head>
+<body style="background-color: #f4f6f9; color: #333333; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+
+    <!-- Meni -->
+    <nav style="background-color: #2c3e50; padding: 15px; text-align: center; margin-bottom: 20px;">
+        <a href="index.html" style="color: #ffffff; margin: 0 15px; text-decoration: none;">Početna</a> |
+        <a href="o_temi.html" style="color: #ffffff; margin: 0 15px; text-decoration: none;">O temi</a> |
+        <a href="galerija.html" style="color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold;">Galerija</a> |
+        <a href="mapa.html" style="color: #ffffff; margin: 0 15px; text-decoration: none;">Mapa</a>
+    </nav>
+    <main style="max-width: 1000px; margin: 0 auto; background-color: #ffffff; padding: 30px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);">
+        
+    <!-- Naslov -->
+    <h1 style="font-size: 38px; color: #111827; margin: 0 0 15px 0; font-weight: bold; text-align: center;">
+        Interaktivna mapa Beča
+    </h1>
+
+    <!-- Link za nazad -->
+    <div style="margin-bottom: 25px; text-align: center;">
+        <a href="index.html" style="color: #1d4ed8; text-decoration: none; font-size: 18px; font-weight: bold;">
+            &larr; Nazad na početnu stranicu
+        </a>
+    </div>
+
+    <!-- Sivi okvirić sa uputstvom -->
+    <div style="background-color: #e5e7eb; border-radius: 6px; padding: 12px 25px; max-width: 750px; text-align: center; margin: 0 auto 30px auto; box-shadow: 0 1px 1opx rgba(0,0,0,0.1);">
+        <p style="margin-right: auto; font-size: 17px; color: #374151;">
+            <strong>Uputstvo:</strong> <em>Kliknite na različite dijelove mape u nastavku kako biste otvorili odgovarajuće stranice (početna, o temi ili galerija)</em>
+        </p>
+    </div>
+
+    <!-- Interaktivna slika -->
+    <div style="text-align: center;">
+        <img src="slike/slika14.jpg" alt="Interaktivna mapa Beča" usemap="#beč-map" style="max-width: 800px; width: 100%; height: auto; margin: 0 auto; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); display: block;">
+
+        <map name="beč-map">
+            <!-- šenbrun (Rect/Pravougaonik) -->
+            <area shape="rect" coords="50,50,250,450" href="index.html" alt="Šenbrun">
+
+            <!-- katedrala (Rect/Pravougaonik ili Poly) -->
+            <area shape="rect" coords="260,50,500,450" href="o_temi.html" alt="Katedrala">
+
+            <!-- prater (Poly/Poligon ili Rect) -->
+            <area shape="poly" coords="510,50,780,50,780,300,510,300" href="galerija.html" alt="Prater">
+        </map>
+    </div>
+
+</body>
+</html>
+    
+</body>
+</html>

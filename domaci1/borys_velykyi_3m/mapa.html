@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="me">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borys Velykyi - Mapa</title>
+    <link rel="icon" type="image/x-icon" href="Slike_html_chemistry/chem_icon.png">
+</head>
+<body style="background-color: rgb(171, 218, 219);">
+
+    <h1 style="text-align: center; color: rgb(44, 73, 73); font-size: 300%;"> <ins>MAPA</ins>   </h1>
+
+    <!-- Navigacioni meni -->
+    <div style="background-color: darkgrey; font-size: 200%; width: 18%; min-width: 230px; margin: auto; text-align: center;">
+        <a href="index.html">Početna stranica</a>
+        <br>
+        <a href="o_temi.html">O temi</a>
+        <br>
+        <a href="galerija.html">Galerija</a>
+        <br>
+        <a href="mapa.html">Mapa</a>
+    </div>
+    
+    <!-- Uputstvo za posjetioce sajta -->
+     <p style="text-align: center; font-size: 200%; color: rgb(44, 73, 73); margin-top: 5%;">
+        Kliknite na sliku hemijskog posuđa da biste saznali više o njemu
+    </p>
+
+    <!-- Sekcija sa slikom -->
+    <div style="text-align: center;">
+    <img src="Slike_html_chemistry/Chem_dishes_alternative.jpg" usemap="#image-map" style="width: 800px; height: 800px;">
+    </div>
+
+    <!-- Definicija interaktivnih oblasti na mapi slike -->
+    <map name="image-map">
+        <area target="_blank" alt="Slika laboratorijske čaše" title="Laboratorijska čaša" href="https://hr.wikipedia.org/wiki/Laboratorijska_%C4%8Da%C5%A1a" coords="78,456,274,757" shape="rect">
+        <area target="_blank" alt="Slika menzure" title="Menzura" href="https://hr.wikipedia.org/wiki/Menzura" coords="356,9,358,712,332,715,293,760,375,795,490,783,511,729,456,709,461,11" shape="poly">
+        <area target="_blank" alt="Slika erlenmajera" title="Erlenmajer" href="https://sr.wikipedia.org/wiki/%D0%95%D1%80%D0%BB%D0%B5%D0%BD%D0%BC%D0%B0%D1%98%D0%B5%D1%80%D0%BE%D0%B2%D0%B5_%D0%B1%D0%BE%D1%86%D0%B5" coords="609,327,613,414,533,703,567,747,658,763,746,742,771,699,696,412,700,324" shape="poly">
+    </map>
+
+
+</body>
+</html>

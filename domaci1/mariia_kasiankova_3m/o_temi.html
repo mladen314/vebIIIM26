@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cnr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariia Kasiankova – O temi</title>
+    <link rel="icon" type="image/png" href="slike/favicon.png">
+
+    <!-- Много однотипных элементов повторяется, так что удобнее вынести стиль в начало -->
+    <style>
+        /* Meni */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #3b4d32;
+            padding: 15px 0;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: #f2ede4;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* Чтобы текст был по центру, по красоте - программа запоминает, что если ей встретиться элемент с таким паспортом, то она всё оформит так */
+        #sadrzaj {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #3b4d32;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b4d32;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: #3b4d32;
+            font-size: 22px;
+        }
+
+        p {
+            text-align: left;
+            text-indent: 30px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Горизонтальная линия, чтобы ничего не вытекало - первая функция жестко закрепляет линию под всем остальным */
+        hr {
+            clear: both;
+            margin: 40px 0;
+            border: 1px solid #3b4d32;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f2ede4; font-family: 'Times New Roman', Times, serif; color: #2c251e; margin: 0; padding: 20px;">
+
+  
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="o_temi.html">O temi</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="mapa.html">Mapa slike</a>
+    </nav>
+
+    <h1>Anton Pavlovič Čehov – biografija</h1>
+
+    <div id="sadrzaj">
+
+        <!-- Введение -->
+        <p>
+            Anton Pavlovič Čehov jedan je od najznačajnijih ruskih dramatičara. Smatra se začetnikom <mark>psihološkog realizma</mark> u drami, ali i književnosti. Pisao je i kratke humoreske o otuđenim ljudima koje je društvena realnost izobličila. Fabule njegovih dela jednostavne su i bez velikih junaka i velikih zbivanja. Pisao je drame od komičnih jednočinki, a kasnije i od više činova. Čehov je uvelike uticao na razvoj moderne dramske književnosti.
+        </p>
+
+        <hr>
+
+        <!-- Часть 1: Детство -->
+        <h2>Detinjstvo</h2>
+
+        <p>
+            Čehov je rođen 1860. u Taganrogu u Rusiji, kao treće od <strong>šestero dece</strong>. U rodnom gradu završio je osnovnu školu i gimnaziju. Već je tada počeo da se zanima za pozorište i književnost. U gimnaziji je počeo da uređuje školske novine i objavljuje svoje radove.
+        </p>
+        <p>
+            Nakon očevog bankrota, Čehovljeva porodica preselila se u Moskvu, ali on je ostao u rodnom gradu. Tada je napisao svoju prvu dramu <cite>Bez oca</cite>. Na žalost, ona je izgubljena i ni do danas nije pronađena.
+        </p>
+
+        <hr>
+
+        <!-- Часть 2: Молодость (картинка с пик элементом, обмотана с левой стороны) -->
+        <h2>Mladost</h2>
+
+        <picture>
+            <source media="(max-width: 799px)" srcset="slike/Cehov-student-mali.jpg">
+            <source media="(min-width: 800px)" srcset="slike/Cehov-student.jpg">
+            <img src="slike/Cehov-student.jpg" alt="Čehov kao student, 1883. godine"
+                 style="float: left; width: 250px; max-width: 40%; height: auto; margin: 5px 20px 10px 0;">
+        </picture>
+
+        <p>
+            Nakon srednje škole Čehov je otišao u Moskvu i upisao Medicinski fakultet. Nastavio je da objavljuje članke u <small>studentskim</small> časopisima, ali anonimno ili pod pseudonimom.
+        </p>
+        <p>
+            Za vreme studija napisao je dramu <cite>Platonov</cite><sup>1</sup>. Medicinu je završio i radio je kao kotarski doktor, ali je pisanje ostalo njegova glavna strast.
+        </p>
+        <p>
+            <small><sup>1</sup> Drama je izdana tek 1923. godine, dakle više od dvadeset godina nakon Čehovljeve smrti.</small>
+        </p>
+
+        <hr>
+
+        <!-- Часть 3: карьера писателя -->
+        <h2>Početak odraslog života i karijere pisca</h2>
+
+        <p>
+            Radio je u Čikinu i tada objavio zbirku priča <cite>Melpomenine priče</cite>. Tada je Čehov prvi put obolio od tuberkuloze (<abbr title="tuberkuloza">TBC</abbr>). Napisao je dramu <cite>Na glavnoj cesti</cite> i počeo da objavljuje tekstove u novinama.
+        </p>
+
+        <hr>
+
+        <!-- Часть 4: путешествия -->
+        <h2>Putovanja i epidemija</h2>
+
+        <h3>Putovanja</h3>
+        <p>
+            1890. Čehov kreće na putovanja. Najpre je proputovao kroz Sibir, a onda krenuo na plovidbu Tihim i Indijskim okeanom. Sledeće godine zaputio se u zapadnu Evropu. Izdao je tada novele <cite>Dvoboj</cite> i <cite>Žena sa sela</cite>.
+        </p>
+
+        <h3>Kolera 1892.</h3>
+        <p>
+            Kada je izbila kolera 1892. Čehov je besplatno lečio i najsiromašnije seljake, i sam se boreći s glađu. Tada je objavio priče <cite>Moja žena</cite>, <cite>Skakavica</cite> i druge, te dramu <cite>Jubilej</cite>.
+        </p>
+
+        <hr>
+
+        <!-- Часть 5: Ялта (с картинкой, текст справа) -->
+        <h2>Poslednje godine na Jalti</h2>
+
+        <img src="slike/Cehov-Jalta.jpg" alt="Čehov na Jalti, 1903. godine"
+             style="float: right; width: 250px; max-width: 40%; height: auto; margin: 5px 0 10px 20px;">
+
+        <p>
+            Nakon što mu se i samom pogoršalo zdravlje, otišao je u Italiju i Francusku, objavivši djela <cite>Student</cite>, <cite>Na ladanju</cite> i druge. Opet je obolio od tuberkuloze, od koje se najpre lečio u Francuskoj. Tada je objavio nekoliko drama, među kojima je i poznata <cite>Ujka Vanja</cite>.
+        </p>
+        <p>
+            Tuberkulozu je nastavio da leči na Jalti. Njegova dela su već bila toliko obilna, da su sabrana činila 11 tomova. 1903. izdao je poslednja dela, među kojima je i njegov <cite>Višnjik</cite>.
+        </p>
+
+        <hr>
+
+        <!-- Часть 6: последние годы и смерть -->
+        <h2>Kraj života</h2>
+
+        <p>
+            Kazališta su tada počela da izvode njegove drame, iako su bila niskobudžetna i uglavnom za radničku klasu, ali unatoč tome, bivaju <em>zabranjena</em>.
+        </p>
+        <p>
+            Do tada se Čehovu zdravlje značajno pogoršalo. Otišao je u Njemačku na lečenje i tamo umro 1904. godine.
+        </p>
+
+        <hr>
+
+        <!-- Источники -->
+        <h2>Izvori</h2>
+        <p style="text-indent: 0; font-size: 16px;">
+            Tekst: <a href="https://www.lektire.rs/pisac/anton-pavlovic-cehov/" target="_blank" style="color: #3b4d32;">Lektire.rs – Anton Pavlovič Čehov</a>
+        </p>
+
+    </div>
+</body>
+</html>
+
