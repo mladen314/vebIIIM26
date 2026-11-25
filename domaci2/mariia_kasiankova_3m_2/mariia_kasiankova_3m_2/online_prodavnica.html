@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cnr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок вкладки браузера -->
+    <title>Mariia Kasiankova – Online prodavnica</title>
+    <!-- Иконка сайта и подключение стилей -->
+    <link rel="icon" type="image/png" href="slike/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Главное меню навигации -->
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="o_temi.html">O temi</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="mapa.html">Mapa slike</a>
+        <a href="online_prodavnica.html" class="aktivna">Online prodavnica</a>
+    </nav>
+
+    <!-- Главный заголовок страницы -->
+    <h1>Online prodavnica</h1>
+
+    <!-- Каталог товаров в виде карточек -->
+    <div class="kartice-kontejner">
+        <!-- Карточка 1 -->
+        <div class="kartica">
+            <h3>Čovjek u futroli</h3>
+            <img src="slike_prodavnica/Человек в футляре.jpg" alt="Knjiga Čovjek u futroli">
+            <p class="cena">5€</p>
+            <button type="button">Kupiti</button>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="kartica">
+            <h3>Galeb</h3>
+            <img src="slike_prodavnica/Чайка.jpg" alt="Knjiga Galeb">
+            <p class="cena">5€</p>
+            <button type="button">Kupiti</button>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="kartica">
+            <h3>O ljubavi</h3>
+            <img src="slike_prodavnica/О любви.jpg" alt="Knjiga O ljubavi">
+            <p class="cena">5€</p>
+            <button type="button">Kupiti</button>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="kartica">
+            <h3>Dvoboj</h3>
+            <img src="slike_prodavnica/Дуэль.jpg" alt="Knjiga Dvoboj">
+            <p class="cena">5€</p>
+            <button type="button">Kupiti</button>
+        </div>
+
+        <!-- Карточка 5 -->
+        <div class="kartica">
+            <h3>Paviljon br. 6</h3>
+            <img src="slike_prodavnica/Палата №6.jpg" alt="Knjiga Paviljon br. 6">
+            <p class="cena">5€</p>
+            <button type="button">Kupiti</button>
+        </div>
+    </div>
+
+    <!-- Блок с таблицей режима работы -->
+    <div class="radno-vrijeme-sekcija">
+        <p>Takođe možete doći i kupiti ove proizvode lično u našoj prodavnici. U nastavku je radno vrijeme:</p>
+
+        <table class="tabela-radno-vrijeme">
+            <thead>
+                <tr>
+                    <th>Dan</th>
+                    <th>Radno vrijeme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ponedjeljak</td>
+                    <td>09:00 – 17:00</td>
+                </tr>
+                <tr>
+                    <td>Utorak</td>
+                    <td>09:00 – 17:00</td>
+                </tr>
+                <tr>
+                    <td>Srijeda</td>
+                    <td>09:00 – 17:00</td>
+                </tr>
+                <tr>
+                    <td>Četvrtak</td>
+                    <td>09:00 – 17:00</td>
+                </tr>
+                <tr>
+                    <td>Petak</td>
+                    <td>09:00 – 17:00</td>
+                </tr>
+                <tr>
+                    <td>Subota</td>
+                    <td>10:00 – 14:00</td>
+                </tr>
+                <tr>
+                    <td>Nedjelja</td>
+                    <td class="neradni-dan">Neradni dan</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+        body{
+            background-color: darkgreen;
+            
+        }
+        #b2{
+            background-color: crimson;
+        background-image:url("images/3.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #b1{
+            background-image:url("images/mapa.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+        .p1{
+            font-size:40px;
+        }
+        .p2{
+            font-size: 25px;
+        }
+        .h2{
+            font-size: 35px;
+        }
+        .h1{
+            text-align: center;font-size:75px;color:darkred;
+        }
+        .but{
+            font-size: 30px;
+            background-color: darkred;
+            color: darkgreen;
+            border-radius: 30px;
+            border-width: 4px;
+            box-align: center;
+            font-weight: bold;
+        }
+        .ploce{
+           text-align: center;font-size:40px;color:darkred;
+        }
+        .proizvodi {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.kartica {
+    background-color: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+}
+
+.kartica img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kartica h3 {
+    font-size: 20px;
+}
+
+.kartica p {
+    font-size: 18px;
+    font-weight: bold;
+}
+th:hover{
+    background-color: goldenrod;
+}
+th{
+    background-color: darkred;
+    color: darkgreen;
+    font-size: 25px;
+    width: 300;
+    
+}
+table{
+    border: 3px solid black;
+    border-color: black;
+    background-color: black;
+  margin: auto;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jovana Filipović - mapa</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; margin: 30px; text-align: center;">
+
+
+     <!-- meni -->
+    <nav style="background-color: #333; padding: 10px; text-align: center; margin-bottom: 20px;">
+        <a href="index.html" style="color: white; margin: 0 15px; text-decoration: underline;">Početna</a>
+        <a href="o_temi.html" style="color: white; margin: 0 15px; text-decoration: underline;">O temi</a>
+        <a href="galerija.html" style="color: white; margin: 0 15px; text-decoration: underline;">Galerija</a>
+        <a href="mapa.html" style="color: white; margin: 0 15px; text-decoration: underline;">Mapa</a>
+        <a href="online_prodavnica.html" style="color: white; margin: 0 15px; text-decoration: underline;">Online prodavnica</a>
+    </nav>
+
+    <!-- Naslov -->
+    <h1 style="color: #2c3e50; font-family: 'Times New Roman', Times, serif;">Interaktivna mapa</h1>
+
+    <!-- Kratko uputstvo -->
+    <div style="background-color: #e9ecef; padding: 12px; max-width: 600px; margin: 0 auto 25px auto; border-radius: 5px;">
+        <p style="margin: 0; font-style: italic; color: #555;">
+            <strong>Uputstvo:</strong> Kliknite na različite dijelove slike u nastavku (na Mona Lizu, Vitruvijevog čovjeka ili mašinu za letenje) da biste otvorili odgovarajući sadržaj!
+        </p>
+    </div>
+    <img src="slike_domaci/za_mapu.jpg" usemap="#leonardo-mapa" width="700" style="border: 2px solid #ccc; border-radius: 8px;">
+
+    <!-- MAPA SLIKE sa elementima map i area (najmanje 3 oblasti, oblici rect i circle) -->
+    <map name="leonardo-mapa">
+        
+        <area shape="rect" coords="50,50,250,350" href="galerija.html" >
+        <area shape="circle" coords="350,200,90" href="index.html">
+        <area shape="rect" coords="450,50,650,350" href="o_temi.html" >
+    </map>
+
+</body>
+</html>

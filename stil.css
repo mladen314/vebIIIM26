@@ -1,0 +1,32 @@
+.blok div{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+}
+.blok div:hover{
+    scale: 1.5;
+}
+.blok{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.blok1{
+    background-color: aqua;
+}
+.blok2{
+    background-color: rgb(43, 255, 0);
+    position: relative;
+    left: 20px;
+    top: 20px;
+    
+}
+.blok3{
+    background-color: rgb(60, 0, 255);
+}
+.blok4{
+    background-color: rgb(229, 140, 141);
+}

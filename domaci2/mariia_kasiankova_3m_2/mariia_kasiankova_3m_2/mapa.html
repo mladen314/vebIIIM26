@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cnr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок вкладки браузера -->
+    <title>Mariia Kasiankova – Mapa slike</title>
+    <!-- Иконка сайта и подключение стилей -->
+    <link rel="icon" type="image/png" href="slike/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mapa">
+
+    <!-- Главное меню навигации -->
+    <nav>
+        <a href="index.html">Početna stranica</a>
+        <a href="o_temi.html">O temi</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="mapa.html" class="aktivna">Mapa slike</a>
+        <a href="online_prodavnica.html">Online prodavnica</a>
+    </nav>
+
+    <!-- Главный заголовок страницы -->
+    <h1>Anton Pavlovič Čehov – mapa slike</h1>
+
+    <!-- Инструкция по кликам на области изображения -->
+    <p>
+        Klikni na lijevi dio slike da otvoriš biografiju,
+        na krug da pogledaš galeriju, a na trougao da pročitaš
+        više o Čehovu na spoljašnjem sajtu.
+    </p>
+
+    <!-- Карта изображения с активными зонами -->
+    <div id="okvir-slike">
+        <img
+            id="mapa-slika"
+            src="slike/mapa_slika.png"
+            alt="Kolaž o Antonu Pavloviču Čehovu sa tri aktivne oblasti"
+            width="800"
+            height="500"
+            usemap="#cehovmapa"
+        >
+
+        <map name="cehovmapa">
+            <!-- Прямоугольная зона: переход на биографию -->
+            <area
+                shape="rect"
+                coords="15,45,295,330"
+                href="o_temi.html"
+                alt="Otvori biografiju Antona Čehova"
+                title="Biografija Antona Čehova"
+            >
+
+            <!-- Круглая зона: переход в галерею -->
+            <area
+                shape="circle"
+                coords="410,210,120"
+                href="galerija.html"
+                alt="Otvori galeriju fotografija Antona Čehova"
+                title="Galerija fotografija"
+            >
+
+            <!-- Треугольная зона: переход на внешний сайт -->
+            <area
+                shape="poly"
+                coords="475,430,725,430,600,195"
+                href="https://www.lektire.rs/pisac/anton-pavlovic-cehov/"
+                target="_blank"
+                alt="Pročitaj više o Čehovu na sajtu Lektire.rs"
+                title="Saznaj više o Čehovu"
+            >
+        </map>
+    </div>
+
+    <!-- Дополнительное пояснение -->
+    <p class="napomena">
+        Izaberi jednu od označenih oblasti na slici da saznaš više o
+        životu i djelu Antona Pavloviča Čehova.
+    </p>
+
+</body>
+</html>

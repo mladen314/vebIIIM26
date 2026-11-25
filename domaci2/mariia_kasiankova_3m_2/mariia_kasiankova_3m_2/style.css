@@ -1,0 +1,382 @@
+/* =========================================================
+   ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ САЙТА
+   ========================================================= */
+
+body {
+    background-color: #f2ede4;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2c251e;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Главное навигационное меню */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    background-color: #3b4d32;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Обычная ссылка в меню */
+nav a {
+    color: #f2ede4;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Наведение на ссылку в меню */
+nav a:hover {
+    color: #d7c49b;
+    text-decoration: underline;
+}
+
+/* Выделение активной страницы в меню */
+nav a.aktivna {
+    background-color: #f2ede4;
+    color: #3b4d32;
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+
+    nav a.aktivna:hover {
+    color: #3b4d32;
+    text-decoration: none;
+} 
+
+/* Заголовки и базовый текст */
+h1 {
+    color: #3b4d32;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+h2 {
+    color: #3b4d32;
+    font-size: 28px;
+}
+
+h3 {
+    color: #3b4d32;
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   ГЛАВНАЯ СТРАНИЦА (index.html)
+   ========================================================= */
+
+/* Основное фото на главной */
+body.pocetna img {
+    display: block;
+    margin: 20px auto;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+}
+
+/* Абзацы на главной с красной строкой */
+body.pocetna p {
+    max-width: 750px;
+    margin: 20px auto;
+    text-indent: 30px;
+}
+
+/* Ссылки внутри текста на главной */
+body.pocetna p a {
+    color: #3b4d32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body.pocetna p a:hover {
+    text-decoration: underline;
+}
+
+/* Строки с автором и источником */
+body.pocetna .izvor {
+    font-size: 14px;
+    text-indent: 0;
+}
+
+/* =========================================================
+   СТРАНИЦА О ТЕМЕ / БИОГРАФИЯ (o_temi.html)
+   ========================================================= */
+
+/* Блок оглавления и основного текста */
+#sadrzaj {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Ссылки оглавления (якоря на разделы) */
+#sadrzaj ul li a {
+    font-size: 20px;
+    color: #2c251e;
+    text-decoration: none;
+}
+
+#sadrzaj ul li a:hover {
+    text-decoration: underline;
+    color: #3b4d32;
+}
+
+/* Красная строка в биографии */
+body.o-temi p {
+    text-indent: 30px;
+}
+
+/* Изображение слева с обтеканием текстом */
+.slika-levo {
+    float: left;
+    width: 240px;
+    height: auto;
+    margin: 5px 20px 10px 0;
+}
+
+/* Изображение справа с обтеканием текстом */
+.slika-desno {
+    float: right;
+    width: 240px;
+    height: auto;
+    margin: 5px 0 10px 20px;
+}
+
+/* Разделительная линия после обтекаемых картинок */
+hr {
+    clear: both;
+    margin: 35px 0;
+    border: 0;
+    border-top: 2px solid #3b4d32;
+}
+
+/* Ссылка на источник в конце биографии */
+body.o-temi .izvor {
+    text-indent: 0;
+    font-size: 15px;
+}
+
+body.o-temi .izvor a {
+    color: #3b4d32;
+}
+
+/* =========================================================
+   ГАЛЕРЕЯ (galerija.html)
+   ========================================================= */
+
+body.galerija p {
+    text-align: center;
+}
+
+/* Контейнер карточек-превью галереи */
+#galerija {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 1150px;
+}
+
+/* Картинки в галерее */
+#galerija img {
+    display: block;
+    height: 220px;
+    width: auto;
+    border: 3px solid #3b4d32;
+}
+
+/* =========================================================
+   КАРТА ИЗОБРАЖЕНИЯ (mapa.html)
+   ========================================================= */
+
+body.mapa p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Рамка для изображения с интерактивными областями */
+#okvir-slike {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#mapa-slika {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #3b4d32;
+}
+
+/* Подсказка под картой */
+.napomena {
+    font-size: 15px;
+    color: #3b4d32;
+    margin-top: 15px;
+}
+
+/* =========================================================
+   КАРТОЧКИ ТОВАРОВ (online_prodavnica.html)
+   ========================================================= */
+
+/* Ряд карточек товаров */
+.kartice-kontejner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px auto;
+    max-width: 1050px;
+}
+
+/* Одна карточка товара */
+.kartica {
+    background-color: #ffffff;
+    border: 2px solid #3b4d32;
+    border-radius: 8px;
+    width: 270px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Название книги в карточке */
+.kartica h3 {
+    color: #2c251e;
+    margin: 0 0 15px 0;
+    font-size: 22px;
+}
+
+/* Обложка книги в карточке */
+.kartica img {
+    display: block;
+    max-width: 100%;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    margin: 0 auto 15px auto;
+}
+
+/* Цена товара */
+.kartica .cena {
+    color: #2c251e;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 18px 0;
+}
+
+/* Кнопка "Kupiti" */
+.kartica button {
+    background-color: #ffffff;
+    color: #2c251e;
+    border: 2px solid #3b4d32;
+    border-radius: 5px;
+    padding: 10px 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+/* Наведение на кнопку */
+.kartica button:hover {
+    background-color: #3b4d32;
+    color: #f2ede4;
+}
+
+/* =========================================================
+   ТАБЛИЦА РЕЖИМА РАБОТЫ (online_prodavnica.html)
+   ========================================================= */
+
+.radno-vrijeme-sekcija {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.radno-vrijeme-sekcija p {
+    text-align: center;
+    margin: 0 auto 20px auto;
+}
+
+.tabela-radno-vrijeme {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 2px solid #3b4d32;
+}
+
+.tabela-radno-vrijeme th,
+.tabela-radno-vrijeme td {
+    border: 1px solid #3b4d32;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 18px;
+    color: #2c251e;
+}
+
+/* Шапка таблицы */
+.tabela-radno-vrijeme thead th {
+    background-color: #3b4d32;
+    color: #f2ede4;
+    font-weight: bold;
+}
+
+/* Подсветка отдельной ячейки при наведении курсора */
+.tabela-radno-vrijeme td:hover {
+    background-color: #d7c49b;
+}
+
+/* Выделение выходного дня */
+.tabela-radno-vrijeme .neradni-dan {
+    font-weight: bold;
+    color: #3b4d32;
+}
+
+/* =========================================================
+   АДАПТАЦИЯ ПОД МАЛЕНЬКИЕ ЭКРАНЫ
+   ========================================================= */
+
+@media (max-width: 600px) {
+    /* Уменьшаем внешние отступы на узких экранах */
+    body {
+        padding: 10px;
+    }
+
+    /* Более компактное меню */
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    /* Чуть меньше главный заголовок */
+    h1 {
+        font-size: 30px;
+    }
+
+    /* Шире блок текста на странице "О temi" */
+    #sadrzaj {
+        width: 95%;
+    }
+
+    /* Уменьшаем высоту картинок в галерее */
+    #galerija img {
+        height: 160px;
+    }
+}
